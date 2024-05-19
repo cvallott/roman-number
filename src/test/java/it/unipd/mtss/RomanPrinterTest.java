@@ -26,6 +26,7 @@ public class RomanPrinterTest {
         assertEquals("   _____ \n" + "  / ____|\n" + " | |     \n" + " | |     \n" + " | |____ \n" + "  \\_____|\n", RomanPrinter.print(100));
         assertEquals("Numero non valido", RomanPrinter.print(0));
         assertEquals("Numero non valido", RomanPrinter.print(1001));
+
     }
 
 }
