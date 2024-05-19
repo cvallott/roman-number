@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 public class RomanPrinterTest {
 
     @Test
-    public void testPrint1to500(){
+    public void testPrint1to1000(){
 
         assertEquals(" _____ \n" + "|_   _|\n" + "  | |  \n" + "  | |  \n" + " _| |_ \n" + "|_____|\n", RomanPrinter.print(1));
         assertEquals(" _____ __      __\n" + "|_   _|\\ \\    / /\n" + "  | |   \\ \\  / / \n" + "  | |    \\ \\/ /  \n" + " _| |_    \\  /   \n" + "|_____|    \\/    \n", RomanPrinter.print(4));
@@ -26,6 +26,8 @@ public class RomanPrinterTest {
         assertEquals("   _____ \n" + "  / ____|\n" + " | |     \n" + " | |     \n" + " | |____ \n" + "  \\_____|\n", RomanPrinter.print(100));
         assertEquals("   _____   _____  \n" + "  / ____| |  __ \\ \n" + " | |      | |  | |\n" + " | |      | |  | |\n" + " | |____  | |__| |\n" + "  \\_____| |_____/ \n", RomanPrinter.print(400));
         assertEquals("  _____  \n" + " |  __ \\ \n" + " | |  | |\n" + " | |  | |\n" + " | |__| |\n" + " |_____/ \n", RomanPrinter.print(500));
+        assertEquals("   _____   __  __ \n" + "  / ____| |  \\/  |\n" + " | |      | \\  / |\n" + " | |      | |\\/| |\n" + " | |____  | |  | |\n" + "  \\_____| |_|  |_|\n", RomanPrinter.print(900));
+        assertEquals("  __  __ \n" + " |  \\/  |\n" + " | \\  / |\n" + " | |\\/| |\n" + " | |  | |\n" + " |_|  |_|\n", RomanPrinter.print(1000));
         assertEquals("Numero non valido", RomanPrinter.print(0));
         assertEquals("Numero non valido", RomanPrinter.print(1001));
 
