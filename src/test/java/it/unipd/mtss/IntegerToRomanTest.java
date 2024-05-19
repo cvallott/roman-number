@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 
 public class IntegerToRomanTest {
     @Test
-    public void testConvert1to50() {
+    public void testConvert1to100() {
         assertEquals("I", IntegerToRoman.convert(1));
         assertEquals("IV", IntegerToRoman.convert(4));
         assertEquals("V", IntegerToRoman.convert(5));
@@ -20,7 +20,9 @@ public class IntegerToRomanTest {
         assertEquals("XX", IntegerToRoman.convert(20));
         assertEquals("XL", IntegerToRoman.convert(40));
         assertEquals("L", IntegerToRoman.convert(50));
-        assertEquals("Numero non valido", IntegerToRoman.convert(51));
+        assertEquals("XC", IntegerToRoman.convert(90));
+        assertEquals("C", IntegerToRoman.convert(100));
+        assertEquals("Numero non valido", IntegerToRoman.convert(101));
         assertEquals("Numero non valido", IntegerToRoman.convert(0));
     }
 }
