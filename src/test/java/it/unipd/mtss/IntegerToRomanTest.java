@@ -11,13 +11,14 @@ import static org.junit.Assert.assertEquals;
 
 public class IntegerToRomanTest {
     @Test
-    public void testConvert1to10() {
+    public void testConvert1to20() {
         assertEquals("I", IntegerToRoman.convert(1));
         assertEquals("IV", IntegerToRoman.convert(4));
         assertEquals("V", IntegerToRoman.convert(5));
         assertEquals("IX", IntegerToRoman.convert(9));
         assertEquals("X", IntegerToRoman.convert(10));
-        assertEquals("Numero non valido", IntegerToRoman.convert(11));
+        assertEquals("XX", IntegerToRoman.convert(20));
+        assertEquals("Numero non valido", IntegerToRoman.convert(21));
         assertEquals("Numero non valido", IntegerToRoman.convert(0));
     }
 }
